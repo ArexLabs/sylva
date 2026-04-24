@@ -1,0 +1,14 @@
+C:\Users\mateo\Documents\GitHub\sylva\tools\sylva-config\target\debug\deps\serde-657313480cb56bc5.d: C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\mateo\Documents\GitHub\sylva\tools\sylva-config\target\debug\build\serde-3d16538b4337e136\out/private.rs
+
+C:\Users\mateo\Documents\GitHub\sylva\tools\sylva-config\target\debug\deps\libserde-657313480cb56bc5.rlib: C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\mateo\Documents\GitHub\sylva\tools\sylva-config\target\debug\build\serde-3d16538b4337e136\out/private.rs
+
+C:\Users\mateo\Documents\GitHub\sylva\tools\sylva-config\target\debug\deps\libserde-657313480cb56bc5.rmeta: C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\mateo\Documents\GitHub\sylva\tools\sylva-config\target\debug\build\serde-3d16538b4337e136\out/private.rs
+
+C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\mateo\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+C:\Users\mateo\Documents\GitHub\sylva\tools\sylva-config\target\debug\build\serde-3d16538b4337e136\out/private.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\mateo\\Documents\\GitHub\\sylva\\tools\\sylva-config\\target\\debug\\build\\serde-3d16538b4337e136\\out

@@ -1,0 +1,5 @@
+desktop:
+  theme: "Sylva-Dark"
+  font: "Outfit 11"
+  panel_height: 32
+  effects_enabled: true
