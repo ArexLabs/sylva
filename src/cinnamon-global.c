@@ -176,8 +176,9 @@ cinnamon_global_get_property(GObject         *object,
       g_value_set_object (value, global->focus_manager);
       break;
     case PROP_UI_SCALE:
-      g_value_set_uint (value, global->ui_scale);
+      g_value_set_double (value, global->ui_scale);
       break;
+
     case PROP_SESSION_RUNNING:
       g_value_set_boolean (value, global->session_running);
       break;
@@ -474,7 +475,7 @@ cinnamon_global_class_init (CinnamonGlobalClass *klass)
 
   g_object_class_install_property (gobject_class,
                                    PROP_UI_SCALE,
-                                   g_param_spec_uint ("ui-scale",
+                                   g_param_spec_double ("ui-scale",
                                                       "Current UI Scale",
                                                       "Current UI Scale",
                                                       0, G_MAXUINT, 1,
@@ -866,7 +867,7 @@ update_scaling_factor (CinnamonGlobal  *global,
 {
   ClutterStage *stage = CLUTTER_STAGE (global->stage);
   StThemeContext *context = st_theme_context_get_for_stage (stage);
-  int scaling_factor;
+  double scaling_factor;
 
   scaling_factor = meta_settings_get_ui_scaling_factor (settings);
   g_object_set (context, "scale-factor", scaling_factor, NULL);

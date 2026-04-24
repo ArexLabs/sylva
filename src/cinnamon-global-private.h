@@ -70,7 +70,7 @@ struct _CinnamonGlobal {
   guint leisure_function_id;
 
   gint64 last_gc_end_time;
-  guint ui_scale;
+  gdouble ui_scale;
   gboolean session_running;
   gboolean has_modal;
 

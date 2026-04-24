@@ -327,7 +327,8 @@ static const MetaPluginInfo *
 cinnamon_plugin_plugin_info (MetaPlugin *plugin)
 {
   static const MetaPluginInfo info = {
-    .name = "Cinnamon",
+    .name = "Sylva",
+
     .version = "0.1",
     .author = "Various",
     .license = "GPLv2+",

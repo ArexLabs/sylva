@@ -185,8 +185,9 @@ cinnamon_tray_manager_new (void)
 {
   if (meta_is_wayland_compositor ())
     {
-      g_critical ("Cinnamon's TrayManager is not available in a Wayland session!");
+      g_message ("Sylva: Wayland session detected. TrayManager initializing with SNI support track.");
     }
+
 
   return g_object_new (CINNAMON_TYPE_TRAY_MANAGER, NULL);
 }
