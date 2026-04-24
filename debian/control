@@ -125,10 +125,10 @@ Suggests: cinnamon-doc
 Breaks: cinnamon-screensaver (<< 6.7)
 Replaces: cinnamon-screensaver (<< 6.7)
 Provides: notification-daemon, x-window-manager, polkit-1-auth-agent
-Description: Modern Linux desktop
- Cinnamon is a modern Linux desktop which provides advanced innovative
- features and a traditional user experience. It's easy to use, powerful
- and flexible.
+Description: Sylva Desktop (Cinnamon-based)
+ Sylva is a modern Linux desktop derived from Linux Mint which provides 
+ advanced innovative features and a traditional user experience. 
+ It's easy to use, powerful and flexible.
 
 Package: cinnamon-common
 Architecture: all
@@ -141,12 +141,12 @@ Depends:
  xdg-utils,
  ${misc:Depends},
  ${python3:Depends},
-Description: Cinnamon desktop (Common data files)
- Cinnamon is a modern Linux desktop which provides advanced innovative
+Description: Sylva desktop (Common data files)
+ Sylva is a modern Linux desktop which provides advanced innovative
  features and a traditional user experience. It's easy to use, powerful
  and flexible.
  .
- This package contains the architecture independent files needed by Cinnamon
+ This package contains the architecture independent files needed by Sylva.
 
 Package: cinnamon-dbg
 Section: debug
