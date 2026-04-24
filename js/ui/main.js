@@ -129,7 +129,9 @@ const Util = imports.misc.util;
 const Keybindings = imports.ui.keybindings;
 const Settings = imports.ui.settings;
 const Systray = imports.ui.systray;
+const XletDispatcher = imports.ui.xletDispatcher;
 const Accessibility = imports.ui.accessibility;
+
 const ModalDialog = imports.ui.modalDialog;
 const InputMethod = imports.misc.inputMethod;
 const ScreenRecorder = imports.ui.screenRecorder;
@@ -193,6 +195,7 @@ var dynamicWorkspaces = null;
 var tracker = null;
 var settingsManager = null;
 var systrayManager = null;
+var xletDispatcher = null;
 var wmSettings = null;
 var pointerSwitcher = null;
 var gesturesManager = null;
@@ -263,6 +266,7 @@ function _initUserSession() {
     global.workspace_manager.override_workspace_layout(Meta.DisplayCorner.TOPLEFT, false, 1, -1);
 
     systrayManager = new Systray.SystrayManager();
+    xletDispatcher = new XletDispatcher.XletDispatcher();
 
     keybindingManager.setBuiltinHandler('panel-run-dialog', Meta.KeyBindingAction.PANEL_RUN_DIALOG,
         function() {
@@ -550,12 +554,7 @@ function start() {
     automountManager = new AutomountManager.AutomountManager();
     autorunManager = new AutorunManager.AutorunManager();
 
-    Promise.all([
-        AppletManager.init(),
-        ExtensionSystem.init(),
-        DeskletManager.init(),
-        SearchProviderManager.init()
-    ]).then(function() {
+    xletDispatcher.initAll().then(function() {
         createLookingGlass();
 
         a11yHandler = new Accessibility.A11yHandler();
