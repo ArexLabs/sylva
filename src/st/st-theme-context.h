@@ -63,7 +63,8 @@ const PangoFontDescription *st_theme_context_get_font       (StThemeContext     
 StThemeNode *               st_theme_context_get_root_node  (StThemeContext             *context);
 StThemeNode *               st_theme_context_intern_node    (StThemeContext             *context,
                                                              StThemeNode                *node);
-gint                        st_theme_context_get_scale_for_stage (void);
+gdouble                     st_theme_context_get_scale_for_stage (void);
+
 G_END_DECLS
 
 #endif /* __ST_THEME_CONTEXT_H__ */

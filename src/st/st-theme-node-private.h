@@ -36,7 +36,7 @@ struct _StThemeNode {
   StThemeNode *parent_node;
   StTheme *theme;
 
-  PangoFontDescription *font_desc;
+  std::unique_ptr<PangoFontDescription, PangoFontDeleter> font_desc;
 
   ClutterColor background_color;
   /* If gradient is set, then background_color is the gradient start */
@@ -69,8 +69,8 @@ struct _StThemeNode {
 
   int transition_duration;
 
-  char *background_image;
-  char *background_bumpmap;
+  std::unique_ptr<char, GFreeDeleter> background_image;
+  std::unique_ptr<char, GFreeDeleter> background_bumpmap;
   int background_blur;
   StBorderImage *border_image;
   StShadow *box_shadow;
@@ -79,10 +79,10 @@ struct _StThemeNode {
   StIconColors *icon_colors;
 
   GType element_type;
-  char *element_id;
-  GStrv element_classes;
-  GStrv pseudo_classes;
-  char *inline_style;
+  std::unique_ptr<char, GFreeDeleter> element_id;
+  std::unique_ptr<char*, GStrvDeleter> element_classes;
+  std::unique_ptr<char*, GStrvDeleter> pseudo_classes;
+  std::unique_ptr<char, GFreeDeleter> inline_style;
   gboolean important;
 
   CRDeclaration **properties;
